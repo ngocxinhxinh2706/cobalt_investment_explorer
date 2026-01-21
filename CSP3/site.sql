@@ -1,0 +1,20 @@
+CREATE TABLE `site` (
+  `site_id` varchar(255) NOT NULL,
+  `site_name` varchar(255) DEFAULT NULL,
+  `other_name` varchar(255) DEFAULT NULL,
+  `last_updt` date DEFAULT NULL,
+  `commodity` varchar(255) NOT NULL,
+  `minreg_id` varchar(255) DEFAULT NULL,
+  `remarks` text,
+  `approx_lon` float DEFAULT NULL,
+  `approx_lat` float DEFAULT NULL,
+  `loc_pt` varchar(10) DEFAULT NULL,
+  `loc_poly` varchar(10) DEFAULT NULL,
+  `geolminocc` varchar(10) DEFAULT NULL,
+  `resources` varchar(10) DEFAULT NULL,
+  `production` varchar(10) DEFAULT NULL,
+  `history` varchar(10) DEFAULT NULL,
+  `dep_model` varchar(10) DEFAULT NULL,
+  `descr_sum` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`site_id`,`commodity`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
